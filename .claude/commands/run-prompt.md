@@ -1,34 +1,11 @@
-# Run Research Prompt
+# Run Batch Of Prompts
 
-You are executing a research prompt from the to-run queue and generating outputs.
+The user has gathered prompt and would like you to run it:
 
-## Task
+The queue is here:
 
-1. List available prompts in `prompts/to-run/`
-2. Ask user which prompt to execute (or accept a filename)
-3. Read the prompt file and any referenced context
-4. Generate a comprehensive research output following the prompt's specifications
-5. Save output to `outputs/` with format: `YYYY-MM-DD-topic-slug-output.md`
-6. Move the executed prompt from `to-run/` to `run/`
-7. Update output file with metadata:
-   - Generation date
-   - Prompt source file
-   - Model used
-   - Key sources consulted
+prompts/to-run
 
-## Output Structure
+The user will inform you which prompt they would like you to run or has linked to it. 
 
-Each output should include:
-- Executive summary
-- Main analysis sections
-- Sources and citations
-- Recommendations or conclusions
-- Related research questions to explore
-
-## Guidelines
-
-- Cite sources where possible
-- Flag claims that need verification
-- Suggest follow-up research questions
-- Note jurisdictions that merit deeper investigation
-- Cross-reference existing outputs when relevant
+Invoke the prompt runner subagent to run them. Do not process the queue yourself. 
