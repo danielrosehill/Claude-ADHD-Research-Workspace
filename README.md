@@ -1,77 +1,30 @@
-# ADHD Medication Access Research
+# Claude Research Workspace: ADHD Drug Policy
 
-A personal research repository documenting the systemic challenges ADHD patients face when accessing prescribed medication, and advocating for policy reform.
+## Note
 
-## Overview
+Just in case you're wondering, this is a public repo for two reasons:
 
-This open-source repository gathers research, personal experiences, and advocacy materials focused on a critical issue: the bureaucratic and systemic barriers that prevent ADHD patients from reliably accessing legally prescribed medications.
+1) I love research and love using Claude Code for research. I also believe that agentic CLIs are ideal "companions" for this and that the repo structure - while code centric - is actually way more versatile than that. I have shared templates for using a repository as a holding workspace for deep research projects, but I figured it was worth open sourcing a real living project as well as the blueprint. 
 
-While ADHD medications are controlled substances with legitimate regulatory considerations, the current implementation of access policies often creates unnecessary hardships for patients who use these medications as prescribed for legitimate medical purposes.
+2) This is really something that I care about. If you want to know the ins and outs of 'why' see the context folder. But if it were not for the above, this would probably have just remained a private repo. So it's a dual-pupose exhibit and workspace!
 
-## The Problem
+## Repo Structure
 
-ADHD patients face multiple overlapping challenges when trying to maintain consistent access to prescribed medication:
+AI moves rapidly. But I draw comfort in the fact that my very primitive folder stucture for grouping what I think of as the foundational ingredients remains, mostly, the same as it did when I began to plump this rabbit hole sometime when ... does it matter!?
 
-### Bureaucratic Complexity
-- Inconsistent refill policies (varying from 27-30 days between different pharmacies)
-- Onerous verification procedures (pill-by-pill counting, mandatory returns of partial prescriptions)
-- Zero margin for error (exactly one pill per day allowed, no emergency supply)
-- Complex procedures for travel medication that often fail due to bureaucratic delays
+That is:
 
-### Supply Disruptions
-- Artificial quotas creating medication shortages
-- Pharmacy closures during conflicts or emergencies
-- Calendar conflicts (holidays, Sabbaths) preventing timely refills
-- Insurance barriers passed on to patients
+`/context` - A place for aggregating contextual data. I think of it as miniature RAG. Sometimes I use real RAG. But rarely. What I *do* do regularly, however, is try to implement the best practices of RAG in a folder: chunk context data as logically and cleanly as possible. 
 
-### Systemic Irony
-As research and advocacy materials highlight, there's a profound irony in forcing ADHD patients—for whom executive dysfunction may be a core symptom—to navigate extraordinarily complex bureaucratic systems to access treatment.
+`/prompts` - A simple base folder for prompts. I typically subdivide this into drafting, to-run, and run and map these onto workflows/scripts to support batch execution.
 
-## What Reasonable Access Looks Like
+`/outputs` - A base folder for outputs. For output storage: the approach I like the most is perhaps best described as "gather and distill": pipe all runs into a folder. Prune cautiously. Organise carefully. Eventually these can be concatenated into meaty outputs. I tend strongly towards targeting PDF as my end delivery format. 
 
-This repository advocates for policies that would provide:
+Those are the foundations. I then layer in (or on) some project specific components.
 
-1. **Reliable Supply**: Patients can obtain prescribed medications without arbitrary obstacles
-2. **Emergency Buffers**: Legal allowance for backup supplies to handle emergencies and calendar conflicts
-3. **Streamlined Travel Procedures**: Efficient, digital processes for obtaining advance medication for international travel
-4. **Medical Understanding**: Recognition that medication disruptions have serious consequences for work, caregiving, and daily functioning
-5. **Differentiation**: Clear policy distinction between medical patients and illicit users
+In this model/sketch:
 
-## Repository Contents
+- Lobby: Workflow mapped in CLAUDE.md. This structure is there to delineate between initial research (first drafts) and later more authoritative articulations of idealised policy. 
+- Data: Some of my "day job" work - for clients - involves handling data. A common pipeline is going from document data (say, data in policy reports) to extracted structured data. For lineage, I like to keep both - so often subdivide between docs and data. 
 
-- **context.md**: Detailed personal narrative and policy analysis
-- **sources/**: Research materials, articles, and reference documentation
-- (Additional materials to be added)
-
-## Goals
-
-This repository serves multiple purposes:
-
-- **Documentation**: Gathering evidence of systemic access problems
-- **Research**: Collecting policy analyses and comparative international approaches
-- **Advocacy**: Building a foundation for potential policy reform initiatives
-- **Community**: Creating a resource for other ADHD patients facing similar challenges
-
-## Context & Perspective
-
-This work reflects personal experience navigating ADHD medication access in Israel, supplemented by research on global policies and patient experiences. The goal is not to dismiss legitimate regulatory concerns, but to advocate for systems that balance oversight with patient welfare.
-
-## Contributing
-
-As an open-source repository, contributions are welcome—particularly:
-- Research on medication access policies in different jurisdictions
-- Personal experiences (anonymized if preferred) documenting access challenges
-- Policy proposals or reform frameworks
-- Medical/pharmacological resources that support patient advocacy
-
-## Disclaimer
-
-This repository represents personal research and advocacy. It is not medical advice. All medication decisions should be made in consultation with qualified healthcare providers.
-
-## License
-
-This repository is open-source to facilitate research and advocacy efforts.
-
----
-
-*"Societies flourish when individuals contribute to the fullest extent their capacities allow. So long as ADHD medications can demonstrate efficacy and safety, there is a compelling case to be made in favor of ease of access for patients."*
+ 
